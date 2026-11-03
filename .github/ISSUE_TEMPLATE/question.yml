@@ -1,0 +1,21 @@
+name: Question
+description: A question about using Resonance or working on the code.
+title: "[Question]: "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you want to know?
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you already tried?
+      description: A file, a screen, or a command you ran is enough.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: Only if the question is about the running app.
+      placeholder: Firefox 134 on Linux

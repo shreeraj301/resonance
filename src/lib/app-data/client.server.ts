@@ -278,7 +278,9 @@ function tokenIdentityKey(token: string): string {
             .digest("base64url");
         }
       }
-    } catch {}
+    } catch {
+      // A bad payload falls through to a hash of the raw token.
+    }
   }
   return createHash("sha256").update(token).digest("base64url");
 }
