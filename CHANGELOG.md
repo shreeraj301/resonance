@@ -11,3 +11,4 @@ First public release.
 - Synth with on-screen keys and a computer keyboard
 - Sine, triangle, saw, and square, plus filter, resonance, and an ADSR envelope
 - Presets, including one you can save on this device
+- The live-preview OAuth client secret is read from `GROK_PREVIEW_CLIENT_SECRET` and is not stored in the repo
